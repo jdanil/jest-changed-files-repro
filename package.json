@@ -1,0 +1,16 @@
+{
+  "name": "jest-changed-files-repro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jdanil/jest-changed-files-repro.git",
+  "author": "Joshua David <@jdanil>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "test:ci": "yarn test --ci",
+    "test:pull-request": "yarn test:ci --changedSince=\"master\""
+  },
+  "devDependencies": {
+    "jest": "26.6.3"
+  }
+}
